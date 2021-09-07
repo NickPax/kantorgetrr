@@ -3,10 +3,10 @@
 //the username is root by default in case of xampp
 //password is nothing by default
 //and lastly we have the database named android. if your database name is different you have to change it 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "android";
+$servername = "den1.mysql3.gear.host";
+$username = "fxwarsaw";
+$password = "MyDBFXWarsaw123$";
+$database = "kantors";
  
  
 //creating a new connection object using mysqli 
@@ -21,10 +21,10 @@ if ($conn->connect_error) {
 //if everything is fine
  
 //creating an array for storing the data 
-$heroes = array(); 
+$kantors = array(); 
  
 //this is our sql query 
-$sql = "SELECT id, name FROM heroes;";
+$sql = "SELECT id, name FROM kantors;";
  
 //creating an statment with the query
 $stmt = $conn->prepare($sql);
